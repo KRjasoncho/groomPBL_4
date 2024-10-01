@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spread sheet app</title>
+    <style>
+      #export-btn {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 10px;
+        display: inline-block;
+        margin-bottom: 10px;
+        cursor: pointer;
+      }
+      .cell-row {
+        display: flex;
+      }
+      .cell {
+        width: 80px;
+        height: 40px;
+        border: 1px solid lightgray;
+        outline: none;
+        box-sizing: border-box;
+      }
+      .cell.header {
+        text-align: center;
+        background-color: rgb(233, 233, 233);
+      }
+      .cell.header.active {
+        background-color: lightblue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="export-btn">Export Spreadsheet</button>
+    <div>Cell: <span id="cell-status"></span></div>
+    <div id="spreadsheet-container"></div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
